@@ -1,0 +1,9 @@
+connections:
+  bt-openbao:
+    kind: vault
+    vault_address: http://vault.invalid
+secrets:
+  JIRA_TOKEN:
+    connection: bt-openbao
+    vault_secrets:
+      - secret/data/fullsend-bt/invalid/jira
